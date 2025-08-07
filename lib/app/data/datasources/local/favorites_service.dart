@@ -148,7 +148,7 @@ class FavoritesService {
   /// - A `Future` that resolves to `true` if all favorites were cleared successfully, or `false` otherwise.
   Future<bool> clearAllFavorites() async {
     try {
-      _userPref.favorites.remove(_favoritesKey);
+      _userPref.favorites = [];
       return true;
     } catch (e) {
       return false;
