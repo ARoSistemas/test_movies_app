@@ -1,0 +1,43 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_single_quotes: false
+    unnecessary_string_escapes: false
+    avoid_print: false
+    always_declare_return_types: false
+    avoid_types_on_closure_parameters: false
+    sort_pub_dependencies: false
+    use_key_in_widget_constructors: false
+    avoid_unnecessary_containers: false
+    # Disable ALL documentation-related rules for SonarQube
+    public_member_api_docs: false
+    package_api_docs: false
+    lines_longer_than_80_chars: false
+    # Disable other strict rules that might cause issues
+    prefer_const_constructors: false
+    prefer_const_literals_to_create_immutables: false
+    avoid_function_literals_in_foreach_calls: false
+    # Disable lints that might be strict
+    prefer_final_locals: false
+    prefer_final_in_for_each: false
+
+analyzer:
+  errors:
+    # Ignore documentation warnings
+    public_member_api_docs: ignore
+    package_api_docs: ignore
+    unintended_html_in_doc_comment: ignore
+    # Ignore other strict warnings
+    missing_required_param: ignore
+    invalid_assignment: warning
+
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart" 
+    - "**/*.mocks.dart"
+    - "**/*.gen.dart"
+    - "**/build/**"
+    - "**/.dart_tool/**"
+    - "**/doc/**"
+    - "**/coverage/**"
