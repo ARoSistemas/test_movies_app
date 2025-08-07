@@ -57,7 +57,7 @@ class MovieCardSkeleton extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: SkeletonLoader(
         builder: Container(
-          height: 280, // Altura fija para evitar overflow
+          height: 250, // Altura fija para evitar overflow
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,11 +95,11 @@ class MovieCardSkeleton extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 4),
+                      // const SizedBox(height: 1),
 
                       // Subtitle placeholder
                       Container(
-                        height: 10,
+                        height: 5,
                         width: 60,
                         decoration: BoxDecoration(
                           color: Colors.grey,

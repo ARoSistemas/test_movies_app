@@ -59,7 +59,7 @@ This project demonstrates high-quality Flutter development with comprehensive te
 ## 🚀 Quick Start
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/ARoSistemas/test_movies_app.git
 cd aro_movies_app
 flutter pub get
 flutter run
@@ -151,7 +151,7 @@ flutter run
 
 1. Clone this repository:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/ARoSistemas/test_movies_app.git
    ```
 2. Install dependencies:
    ```bash
@@ -217,9 +217,6 @@ open coverage/html/index.html   # macOS
 
 ```bash
 # Run complete SonarQube analysis
-.\mysonar.bat
-
-# Or manual execution:
 flutter analyze
 flutter test --coverage  
 sonar-scanner

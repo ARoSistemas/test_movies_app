@@ -35,9 +35,6 @@ class FavoritesService {
   /// SharedPreferences instance
   final UserPref _userPref;
 
-  /// Key for storing favorite movies in SharedPreferences
-  static const String _favoritesKey = 'favorite_movies';
-
   /// Get all favorite movies.
   ///
   /// **Returns:**

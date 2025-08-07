@@ -56,6 +56,13 @@ class MovieDetailsPage extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(background: _buildBackdropImage()),
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: IconButton(
+                icon: const Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+            ),
             actions: [
               Consumer<FavoritesProvider>(
                 builder: (context, favoritesProvider, child) {
